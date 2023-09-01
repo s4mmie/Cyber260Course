@@ -1,0 +1,44 @@
+MTA(Mail transfer agent)
+-Sendmail
+-Postfix
+-etc
+
+MUA(Mail user agent)
+-Outlook
+-Apple mail
+-Gmail
+
+SMTP(Simple Mail Transfer Protocol)
+-Send a message to MTA
+-Originally handled text files
+
+Format
+-Header
+	Contains information about the message such as To, From, and Subject
+-Body section
+	Contains contents of the message
+	Begeinds with the keyboard "DATA"
+	Only uses asci
+
+IMAP(Internet message access protocol) / POP (Post office Protocol)
+
+FTP(File transfer protocol)
+-Enables sending and receiving files over the internet
+-Requires an application program on the client computer and a FTP server program on a server
+
+Ports
+0-1023 Wellknown ports
+1024-49151 Registered ports
+49152-65636 Private / Dynamic ports
+
+80 HTTP
+443 HTTPS
+20/21 FTP:TCP
+25 SMPT:TCP
+143 IMAP:TCP
+110/995 POP3:TCP
+53 DNS:TCP
+
+TCP confirmed packets being sent. Will have a handshake and make sure you are getting everything
+
+UDP will be used for things like streaming videos it will throw data at you and will hope you recieve it all.
