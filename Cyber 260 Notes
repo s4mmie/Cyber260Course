@@ -42,3 +42,148 @@ Ports
 TCP confirmed packets being sent. Will have a handshake and make sure you are getting everything
 
 UDP will be used for things like streaming videos it will throw data at you and will hope you recieve it all.
+
+
+Network topology
+	Physical topology 
+	-(routers, wireless, etc) high level overview of network devices
+	
+	Logical topology
+
+	Router connects two different networks.
+
+	Bus topology 
+	-Used shared ethernet, each message if for a specific MAC address.
+	-Older tec.
+	-Multiple simultaneous transmissions.
+	-No redundancy if network cable fails.
+	-One signal at a time.
+	
+	Ring topology
+	-Older tec where messages travel in a logical "ring"
+	-Dual ring provides redundancy.
+	-Fails more gracefully
+	-A token moves in a circle of all the connected devices, Pc1->Pc2->Pc3 and loops.
+	-It is slower than BUS is fewer devices are transmiting because you will have to wait your turn.
+	
+	Star topology
+	-Common topolgy in most orgs
+	-Switch connects to all devices
+	-Host send message through switch
+	-No redundancy planned.
+	-If the switch goes down so does all communications
+	-Switch can connect to other switches to extend the network.
+	-Hub is physical.
+	Logical switches will manage the connections so there will not be collisions.
+	
+	Mesh topology
+	-Commonly used to connect routers to internal networks.
+	-Creates redundant paths
+	-Fully mesh connects are expensive.
+	-Five devices mean there are 10 links
+	- s N(N-1)/2
+	- EXAMPLE  SanFran -> Detroid/LA/New York -> Miami, Repats. 
+	
+	Hub and spoke topology
+	-Interconnects different locations.
+	-Example traffic send to main office.
+	-No direct communications have to go through the main connection.
+	-Good for secuirty.
+	-Bad if the main offices goes down.	
+	-More long range, may have a Client - Server model inside of it to connect other things.
+	
+	Hub and spoke WAN connection,
+	 Office -> Main office 
+	 Internet -> main office
+	 Main office -> Office
+	
+	Peer to peer networks
+	-No centralized management.
+	-No centralization causing security issues.
+	-Ok for small networks (10 hosts)
+	-Torreting, allowing users to share files accros a network
+	-Peer to peer is dangerous.
+	
+	Client - Server model
+	-Dedicated distrubted services.
+	-Emails and data bases.
+	-Easy to expand.
+	-Client goes to the servver, the server then will connect to other things then get back to you.
+	
+	
+Different types of networks
+	Personal Aera Network(PAN)
+	-PAN communicate over short distances.
+	-EXAMPLE Bluetooth connection.
+	
+	Local Area Netowork(LAN)
+	-Lans exist withone a single geographical location.
+	-Interconnects devices to share resources.
+	-Routers functions as the default to forward traffic from one network to another.
+	-Example Workstation -> Switch -> Firewall -> Router
+		 Above is a connection used to get a comptuer to the internet.
+		 
+	Wireless LAN is like a modem.
+	Hard wired connection throughout different buildings, Campus Area Network(Lans connected by high speed)
+	
+	Metopolitan Area Netowrk
+	-Located within a metropolitan area.
+	-Connected by common carriers or ISP.
+	-This is different because this is not owned by you, you have to go through ISP's or common carriers.
+	
+	
+	Wide Area Network(WAN)
+	-Expands to a larger geographical distance.
+	-WAN connections by managed service providers (MSP) or internet service provider(ISP)
+	
+	Storage Area Network (SAN)
+	-Shared network storage connected by high speed, fiber optic switches and cables.
+	-Redundancy is key(Having fault safes)
+	If one thing fails will pick it up and finish.
+	
+	Software defined networks/SD-WAN
+	
+	-SDN centeralized controller makes routing decisions
+	-SD-WAN allow software to automatically configure a WAN solution.
+
+	Multiprotocol Label Switching (MPLS)
+	-Switching technology that conencts networks over large geographical distances.
+	-Interface independing, could use(metro ethernet(metroE), fiber optic, DSL)
+	-Quality of servicec QoS to prioritize by traffic type.
+	-Packets into the network are taggled by the label edge router(LER) on the Provider Edge (PE) of the service provider's network.
+
+
+Different types of tunneling.
+	Generic Routing Encapsulation(GRE)
+	-Tunneling techonolgy that allolws a tunnel between one side to another over the internet.
+	-Traditional tunnels arent as scaleable.
+	
+	Multipoint generic routing encapsulation(mGRE)
+	
+	Service-Related Entry Points, ways to connect to the internet.
+	-Fiber access terminal(FAT), fiberconnection option to the customer premise(fiber to the home) (FTTH)
+	-Demarcation points - these are locations where the customer network and providers network meet.
+	-Demarcation points are modems/routers.
+	
+	
+Different ways that ISPS will provide connection to the internet.
+	Local loop is your houses connection to the centeral office.
+	Satellite Connectivity
+	-Low earth orbit(LEO) Satellites
+	-LEO Sat's are good for internet connectivity.
+	-Latency may not be suitable for time sensitive apps like Voice over Internet Protocol (VoIP)
+	-Some applications will drop if not getting packets getting sent and received over a quick enough time.
+	
+	Digital Subscriber Line(DSL)
+	-Symmetric DSL (SDSL) - upload and download rates are the same very expensive and limited in distance.
+	-Asymmetric DSL (ADSL) - faster downloads than upload speeds.
+	
+	Cable
+	-Install a cable modem, ISP network connected to a Cable modem-Termination system (CMTS) using coaxial cables.
+	
+	Leased lines
+	-This is provided to be always on, guaranteed, dedicated bandwidth. Expensive.
+	
+	Metro Optical
+	-Fiber optic solutions for providing high speed network between the customer and ISP.
+	-Works with ethernet techonolgies so its a less expensive solution.

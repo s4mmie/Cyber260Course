@@ -1,0 +1,33 @@
+CHALLENGE #1: 282877
+CHALLENGE #2: 321322
+CHALLENGE #3: 444331
+CHALLENGE #4: 561554
+CHALLENGE #5: 363661
+
+(Flag5 is 545561 on the web page?)
+
+Q1 - Using the File Sharing Wizard is known as what type of file sharing?
+Q2 - The creator of a file always has full access regardless of other permissions. This account is also known as the what of the file?
+Q3 - The \\W2K8R2INTERNAL2\Share1 is also known as what path
+Q4 - What share permission level only allows a user to view files and folders in a share?
+Q5 - What share pemission level allows a user to view and change files and folders in a share?
+Q6 - If a share resides on an NTFS volume, which set of permissions take effect?
+Q7 - When mapping a drive, what option will cause the drive to automatically reappear the next time you login?
+Q8 - How can you map a drive if the user you are currently logged in as does not have access to the shared folder?
+Q9 - True or False, mapped drives must have the same drive letter on all machines accessing the shared folder.
+Q10 - If the add printer wizard is unable to automatically find your printer on the network what do you need to do to install it?
+Q11 - True or false? Shared Printers installed in a peer-to-peer network can control their own access and settings for the printer.
+Q12 - How can network administrators force a printer to be installed for a user regardless of the computer they log into? 
+
+A1 - Peer to peer file sharing.
+A2 - The Owner.
+A3 - The Universal Naming Convention Path UNC PATH.
+A4 - Read
+A5 - Read / Write
+A6 - The ones on the disk.
+A7 - Reconnect at logon needs to be checked.
+A8 - Check connect with different credencials and make a username and password to access the drive.
+A9 - False
+A10 - You must click the Printer isn't listed and then you will need to manually internet the printers UNC path.
+A11 - True.
+A12 - Per computer can force this as this will force all users on that machine to have the printer installed, while Per User can use the printer if the user credentials are correct. 
