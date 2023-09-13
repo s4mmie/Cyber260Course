@@ -1,0 +1,70 @@
+Sample Challenge:999818
+CHALLENEGE1:211669
+CHALLENEGE2:335522
+CHALLENEGE3:465511
+CHALLENEGE4:545561
+CHALLENEGE5:782655
+
+Q1: What is ipconfig?
+Q2: What is the purpose of the dir command?
+Q3: What is a default gateway?
+Q4: What is ping?
+Q5: What is the command used to get to the command line in windows?
+Q6: What is a host?
+Q7: Explain what ARP is and how it works.
+Q8: What is the ARP command that displays the current contents of the arp cache?
+Q9: What is a MAC address?
+Q10: What is wireshark?
+Q11: What is promiscuous mode?
+Q12: What is the opcode for an ARP request?
+Q13: What is the opcode for an ARP reply?
+Q14: What type of packet is an ARP request?
+Q15: Why would an ARP frame have a destination MAC address of 00:00:00:00:00:00?
+Q16: What type of packet is an ARP reply?
+Q17: What is TCP?
+Q18: What is the network sniffer used in this lab?
+Q19: List the fields in a UDP header.
+Q20: Describe the use of the source and destination ports in both UDP or TCP packets in a request for a service.
+Q21: Describe the use of the source and destination ports in both UDP and TCP packets in a response back to the client.
+
+A1: ipconfig is a windows command to display the ipaddresses on your network adapter(s). ipconfig /all will display more details such as MAC's and more indpeth descriptions.
+
+A2: dir is a windows command all of the files and sub folders of the current directory, if you open a cmd prompt in the dir of your desktop and type dir it will show all the files and folders in the desktop folder.
+
+A3: The default gateway is the ip to your routers admin panel?? I am not 100% sure but that is what I have ever used it for.
+
+A4: ping is a windows command that can ping a ip / domain, and will tell you how long each packet took to get a reply, if any packets were lost, the average round trip times etc. EXAMPLE ping google.com
+
+A5: The command cmd, will open the command prompt in windows.
+
+A6: A host is a term used, for a device. Such as a host computer, or host network. That is hosting its own IP and MAC?
+
+A7: arp or Address Resolution Protocol, is used to map MAC addresses and IP addresses
+
+A8: arp -a is the windows command.
+
+A9: A MAC address is 8 double hex digits in a row. Normally split by the first 4 being the manufactor and last 4 being the device? I am not 100% sure of the split order.
+
+A10: Wireshark is a network protocol analyzer, this will allow the user to capture the packets processing through their machine. There can be filters and different other flagging systems to help figure out which packets are for each process.
+
+A11: Promiscuous mode is a network interface functioning in a manner to be operatiing, it does not interfere with a normal network communication. Instead the network interface is displaying all data it recieves in the programs capture window.
+
+A12: The op code for an ARP request is 1.
+
+A13: The op code for an ARP reply is 2.
+
+A14: The apr request has a packet type of broadcast packet.
+
+A15: This will happen if the request does not have that information yet because it is unkown.
+
+A16: The apr reply has a packet type of unicast.
+
+A17: TCP stands for Transmission Control Protocol, this is the standard to establish and hold a network converstation. Network applications will exchange data, tcp also works with Internet Protocls which is where a computer sends packets of data back and forth.
+
+A18: Wireshark was used.
+
+A19: The fields in a UDP header field are, source port, destination port, packet length (header and data), along with a simple checksum. If the check sum is used this will provide limited integrity to the UDP header and data.
+
+A20: The source part will be used for the user sessions while the destination port is going to be used by server applications. A source port is a number used in TCP or UDP to send data to one another, a destination port is a number used by TCP or UDP on a single side of the communication to recieve data from another program on the other end.
+
+A21: The source port will identify the process that sent the data and the destination port will idenitfy the process to recieve the data when responding.

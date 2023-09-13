@@ -19,15 +19,15 @@ Q10 - If the add printer wizard is unable to automatically find your printer on 
 Q11 - True or false? Shared Printers installed in a peer-to-peer network can control their own access and settings for the printer.
 Q12 - How can network administrators force a printer to be installed for a user regardless of the computer they log into? 
 
-A1 - Peer to peer file sharing.
+A1 - Simple File Sharing - Peer to peer file sharing.
 A2 - The Owner.
 A3 - The Universal Naming Convention Path UNC PATH.
 A4 - Read
 A5 - Read / Write
-A6 - The ones on the disk.
+A6 - The most rescrictive permissions. - The ones on the disk.(that are most rescrictive)
 A7 - Reconnect at logon needs to be checked.
 A8 - Check connect with different credencials and make a username and password to access the drive.
 A9 - False
 A10 - You must click the Printer isn't listed and then you will need to manually internet the printers UNC path.
-A11 - True.
-A12 - Per computer can force this as this will force all users on that machine to have the printer installed, while Per User can use the printer if the user credentials are correct. 
+A11 - False. - I put true need to look why I was wrong.
+A12 - Per computer can force this as this will force all users on that machine to have the printer installed, while Per User can use the printer if the user credentials are correct not matter the computer. Using Per User. 
