@@ -1,0 +1,49 @@
+Running multiple OS's would require a partition on your hard drive and reboot.
+
+VM's would allow us to carve out hardware resources for each O\S we would like to run.
+
+A hypervisor application is running on the host O/S manages the access to the uest machine.
+
+A well run enviorment will have 
+-production enviorment
+-testing enviorment
+-RND enviorment 
+
+Types of hyper visors
+	TYPE 1 
+	-would be seen in a data center
+	-2500 servers on one box
+	-No operating system host
+	-"Bare metal" / Direct access to hardware
+	
+	TYPE 2 
+	-runs on a host 
+	-The hyper visor links the OS to the VMs
+	-Hyper visor manages the hardware interaction
+	-
+	
+vNic/vSwitch
+-Each vm has a vNic to acess the network 
+-A vSwitch is like a hyper visor for acessing the internet
+
+CSMA/CD is the MAC protrocol wired ethernet
+CSMA CA
+	Collision Detection
+	Collision Avoidance
+	
+Which is true about fiber optic cables
+-More Expensive than copper Cables
+-FALSE:Less Fragile than coaxial cable
+-Uses LED or lasters
+
+How many wire pairs are in the WTP CAT 5 Cable 
+-4
+
+This ethernet standard supports 100 MBPS over twisted pair 
+-100BaseT
+
+What connector do we use with the wired ethernet
+-RJ-45
+
+Which type of hyper visor do you run on your laptop
+-Type 2

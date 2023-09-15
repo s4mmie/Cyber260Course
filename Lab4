@@ -1,0 +1,26 @@
+CHALLENEGE1: 808212
+CHALLENEGE2: 888221
+CHALlENEGE3: 989776
+CHALLENEGE4: 343456
+CHALLENEGE5: 887661
+Q1:What is a sniffer?
+Q2:What is ifconfig?
+Q3:What is the name of the sniffer used in this lab?
+Q4:What is FTP?
+Q5:What is JPG?
+Q6:What is Telnet?
+Q7:What is net group?
+Q8:What is POP?
+Q9:What is a .cap file?
+Q10:What is a TCP stream?
+
+A1:A sniffer aka Packet sniffer is a program or device used to "sniff" the packets on your local network/device. This can also take the form as physical devices that connect to a public network and will capture all the packets on that network.
+A2:ifconfig is a linux command, the equalvant of ipconfig for windows.
+A3:Wireshark.
+A4: FTP stands for file transfer protocl which is a way to transfer files from one computer from another
+A5: JPG is an image format.
+A6 A telnet, is a network protocol that allows a user to connect to another computer that is apart of that same network.
+A7: A net group is a network wide group of host and users.
+A8: POP stands for Post Office Protocol, which is a widely used email application protocol that is used to retreive email from an email server for the client application.
+A9: A .cap file extension used in wireshark to save a capture you took. Example Capture9-15-23-12pm.
+A10: A TCP stream is a wireshark feature that allows the user to follow a stream of packets in a human readable format.
