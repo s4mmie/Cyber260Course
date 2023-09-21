@@ -1,0 +1,36 @@
+CHALLENGE1: 252524
+CHALLENGE2: 333387
+Q1:Convert the decimal number 145 to binary.
+Q2:Convert the binary number 11001100 to decimal.
+Q3:Convert the binary number 01101011 to hexadecimal.
+Q4:Convert the hexadecimal number C7 to binary and decimal.
+Q5:What is the subnet mask of a Class A address?
+Q6:What is the subnet mask of a Class B address?
+Q7:What is the subnet mask of a Class C address?
+Q8:Subnet the following IP address (172.16.0.0) for 50 networks. Provide the new subnet mask and hosts per subnet.
+Q9:True or false? If all network traffic resides on the local LAN, configuring a default gateway is not necessary?
+Q10:True or false? If a computer attempts to ping a machine that does not reside on the local LAN and it does not have a default gateway set, the error message returned by the local computer reads "Destination host unreachable."
+Q11:True or false? If a computer attempts to ping a machine that does not reside on the local LAN and it does have a default gateway set, the error message returned by the local computer reads "Request timed out."
+Q12:What is the term used to describe a group of 4 binary bits?
+Q13:Reduce the following IPv6 address to its shortest form. 2001:01A0:0033:0000:0000:0000:0001:00D4
+Q14:How many possible host addresses are available with a 64-bit interface ID?
+Q15:Is the IPv6 address 2001:1D5::30A::1 a valid address? Why or why not?
+Q16:Is the IPv6 address 10:10::10:10 a valid address? Why or why not?
+Q17:What is the IPv6 loopback address?
+A1: 10010001
+A2:4+8+64+128=204
+A3:1+2+8++32+64=107=6B
+A4:Decimal-199 Binary-11000111
+A5:255.0.0.0
+A6:255.255.0.0
+A7:255.255.255.0
+A8:255.255.0.0   host per subnet 65534
+A9:True
+A10:False
+A11:True
+A12:Nibble
+A13:2001:1A0:33::1:D4
+A14:18,446,744,073,709,551,616
+A15:No because it has two double collons
+A16:Yes because it is borrowing bits
+A17:The loop back is ::1

@@ -47,3 +47,28 @@ What connector do we use with the wired ethernet
 
 Which type of hyper visor do you run on your laptop
 -Type 2
+
+IPV4 vs IPV6
+-Uses 128 bits - Uses 32 bits
+-Consist of 8 roups of 4 hexadecimale powers of 16 (0 -> F) - Consist of 4 8 bit fields.
+-Provides IPSEC and QoS - Has to be installed and included.
+
+Automatic Private IP Addressing (APIPA)
+-Private range of 169.254.0.1 - 169.254.255.254 (Subnet mask 255.255.0.0)
+-Dynamic host configuration Protocol (DHCP) is used to automatically assign ip addresses
+
+Stateless Address Autoconfiguration (SLAAC)
+-IPv6 can use DHCPv6 to obtain up address or use SLAAC
+-Unlike DHCPv6 SLAAC doesn't keep a ercord of the IP pinadress.
+
+Communication types
+-Unicast: One to One
+-Multicase: one to many
+-Broadcast: one to all(IPv6 doesn't broadcast)
+-Anycast: used on IPv6 for one to nearest communication
+-Local loopback- 127.0.0.1 in IPv6- ::1/128
+
+255 is reserved to broadcast, example -> 192.169.1.255 this will broadcast to 192.169.1.0-254
+
+Tunneling encapsulates IPv4 inside an IPv6 packet it comes the data portion of the packet.
+
