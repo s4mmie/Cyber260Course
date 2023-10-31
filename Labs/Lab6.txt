@@ -1,0 +1,43 @@
+CHALLENGE1: 292918
+CHALLENGE2: 444332
+CHALLENGE3: 441155
+CHALLENGE4: 561778
+CHALLENGE5: 678891
+
+Q1:What is the command used to display the current user in Windows and Linux?
+Q2:What two commands can be used to obtain system information win Windows?
+Q3:What command can be used to display CPU information in Linux?
+Q4:What command can be used to display the IP address, subnet mask, and default gateway in Windows?
+Q5:What switch can be added to the above command to also view IP information such as DNS and DHCP servers?
+Q6:What command can be used to display the IP address, subnet mask, and default gateway in Linux?
+Q7:What command is used to look up DNS information in Windows and Linux?
+Q8:What two modes can the above command be executed in?
+Q9:What special domain is associated with reverse DNS lookups?
+Q10:What command is used to display connection information in Windows and Linux?
+Q11:What is at least one of the command switches for the above command that is the same between Windows and Linux and what function does it perform?
+Q12:If a connection has been made to an available port, what state is that connection in?
+Q13:What command tests only end-to-end connectivity in Windows and Linux?
+Q14:What command is used to test every hop between endpoints from a Windows machine?
+Q15:What command is used to test every hop between endpoints from a Linux machine?
+Q16:The ARP protocol is used to determine what address of a node when what address is known?
+Q17:What phase is the first half of the ARP process is known as?
+Q18:What phase is the second half of the ARP process is known as?
+
+A1: whoami
+A2: systeminfo and msinfo32.exe
+A3: cat /proc/cpuinfo
+A4: ipconfig
+A5: /all
+A6: ifconfig
+A7: nslookup
+A8: interactive or non-interactive
+A9: in-addr.arpa
+A10: netstat
+A11: -a
+A12: Active
+A13: ping
+A14: tracert
+A15: traceroute
+A16: MAC address and IP address
+A17: request
+A18: unicast

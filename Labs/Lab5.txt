@@ -1,0 +1,29 @@
+CHALLENGE1: 212355
+CHALLENGE2: 343555
+CHALLENGE3: 881774
+CHALLENGE4: 655771
+CHALLENGE5: 651234
+
+Q1:What command, in Windows, restarts the DHCP lease process?
+Q2:What commands will reset a network interface in Linux?
+Q3:Name the four steps, in order, in a successful DHCP process.
+Q4:What command displays the IP configuration on a Linux machine?
+Q5:True or false? Reservations are immediate and do not require the DHCP lease process to be restarted?
+Q6:True or false? Colons are required when entering the MAC address into the Reservation window?
+Q7:What number is associated with the DNS server option?
+Q8:What number is associated with the domain name?
+Q9:What command clears the DNS cache on a Windows machine?
+Q10:What is another name for an A record?
+Q11:What is another name for a CNAME record?
+
+A1: ipconfig /renew
+A2: ifdown eth0 kills the network 		ifup eth0 restarts the network
+A3: Discover->Offer->Request->Acknowledge
+A4: ifconfig
+A5: False
+A6: False
+A7: 6
+A8: 15
+A9: ipconfig /flushdns
+A10: host
+A11: alias
