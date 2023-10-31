@@ -1,0 +1,72 @@
+Static Routing
+	-A network administrator configures a routing table to direct messages
+		along specific paths.
+	-between a small bussiness and an isp
+	-Manually configured
+	-They dont learn routes automatically
+	-If it goes down you have to manually fix it
+	
+Dynamic Routing
+	-A router automatically calculates the best path between two networks
+		and maintains this informaton in a routing table
+	-The router can detect problems with failed or congested routes
+		and reroute messages through a different path.
+	
+	BENEFITS
+	Automatically find remote networks by sharing routing information
+	between routeres on a network
+	
+	Maintain an up to date routing table on all routers within the network
+	
+Dynamic routing table TREE
+		
+	Interior Gate				Exterior Gate
+Distance Vector		Link State		Path Vector
+RIPv1	IGRP	
+RIPV2	EIGRP		OSPF	HERE	   	 HERE
+
+route(linux) - route print (windows)- show ip route (cisco)
+
+Routing metrics
+	-Hop Count
+	-Theoretical badnwtih
+	-delay / latency
+	-Load
+	-MTU(maximum transmission unit) or the largest IP packet size without fragmentmentation
+	-Routing cost
+	-Reliabiltiy of a potential path
+	-Topology of a network
+The lowest score wins, the score is all of these calculated.
+
+OSPF - Open Shortest Path First
+	-Supports a large network
+	-More CPU + Memory
+	-Prevents routin loops
+	-Shared data
+	-Multi vender routers
+	-Stability
+	
+RIP - Routing Information Protocol (legacy protocol)
+RIPng - Supports Ipv6 the newest RIP version
+IS-IS - Intermediate System to Intermediate system
+EIGRP - Enanced interior gate routing protocol
+	-Less computing
+	-Easy to configure
+	-Was originally proprietary to cisco routers
+	-It is refered as a hybrid protocl
+BGP - Border gateway protocol is the only routing protocl that communicates across the internet.
+	-Spans multiple autonomos system
+	-Special characteristics of BGP the following
+		-Path vector routing protocl
+		-Efficent
+		-Customizable
+	-BGP is the most complex of the routing protocols.
+
+QoS Prioritization
+	1:Traffic enters the router's interface
+	2:QoS tool is used to classify incoming traffic
+	3:Traffic is placed into a waiting queue with a priority
+	4:Packets with a higher priority are transmmited before low priority
+
+
+

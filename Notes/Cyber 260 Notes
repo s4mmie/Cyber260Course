@@ -12,6 +12,9 @@ SMTP(Simple Mail Transfer Protocol)
 -Send a message to MTA
 -Originally handled text files
 
+CRC32 is used by ethernet.
+CRC32 is the hashing for formula, that will hash the entire frame and will be used by the reciever to make sure nothing was changed.
+
 Format
 -Header
 	Contains information about the message such as To, From, and Subject
@@ -187,3 +190,50 @@ Different ways that ISPS will provide connection to the internet.
 	Metro Optical
 	-Fiber optic solutions for providing high speed network between the customer and ISP.
 	-Works with ethernet techonolgies so its a less expensive solution.
+	
+Switches
+	-Unmangaged switches are plug in play and have minimal configuralble options
+	-Managed switches can be configured via a cmd line, or web based management GUI
+	-Switches are a layer 2 device higher layer devices also exist
+		-Layer 3 switch is capable of interpreting layer 3 data and works like a router
+		-Layer 4 switch is capable of interperting layer 4 data
+	
+
+Duplexing
+	-Full duplex is a two way communication
+		-Phone conversations
+	-Simplex is a one way communication
+		-Movies
+		-Radio
+	-Half duplex is a two way communication but one at a time.
+		-Trucker radios (They say over to make sure how to talk)
+		
+VLANS Virtual LANS
+	-Limits traffic to a smaller broadcast
+	-Can be done via mac address / port on router / etc
+	-unused ports will be put on a VLAN
+	-You can configure a VLAN at a switch so a part of the switch is apart of a vlan
+	TYPES OF VLANS
+		-Default VLAN preconfigured on a switch includes all switch ports
+		-Native VLAN untagged from untagged ports
+		-Data VLAN user generated traffic such as email web browsing or database updates
+		-Mangement VLAN provide administrative access to a switch
+		-Voice VLAN supports VoIP traffic
+		-Private VLAN partitions a vlan broadcast domain into sub doamins
+		
+	-Access port's connect the switch to a host
+	-Trunk port's connect the switch to a networking device
+	
+TROUBLESHOOT & SECURE VLANS
+	-Incorrect VLAN assignent
+	-Incorrect port mode
+	
+	MITIATION
+		-Don't use default vlan
+		-change native VLAN to a unsed VLAN ID
+		-Disable auto-trunking
+		-On switches that carry traffics from multiple VLANs configure all ports as access ports
+		-Speicfy which VLANS are supported on each trunk instead of accepting a range of VLANs
+		-Use physical secuirty methods such as door locks to restrict access to network equipment
+	
+		

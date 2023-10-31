@@ -1,0 +1,54 @@
+Port 22 is Secure Shell (SSH)
+
+SFTP Secure File Transfer Protocol. Port 22
+TFTP Trivial File Transfer Protocol UDP Port 69
+
+TLS Transport Layer Security each packet is encrypted on port 990
+
+TCP is connection oriented 3 way hand shake (Transport Control Protocol)
+UDP is not connection orentied/conectionless(User datagram protocol)
+
+SMB Server Message Block UDP 137, 138 TCP 448
+
+Remote Access Protocols
+-Telnet allows remote (command line) connectivity to other devices as a telnet server including IoT devices (Internet of Things) using port 23
+	-Legacy Telnet was unsecure passing data in plain text
+	
+-Remote Desktop Protocol (RDP)
+	-Port 338
+	-Microsoft secure encrypted protocol allowing remote managerment of a server GUI
+
+Email Protocols
+-SMTP Smiple Main Transfer Protocol Outbound email Port 25
+-POP3 Post Office Protocol inbound email port 110
+-IMAP4 Internet Message Access Protocol 4
+
+Secure Email Protocols
+-SMTPS Smiple Main Transfer Protocol
+
+Hypertext transfer protcol (http) (Https)
+-HTTP port 80
+-HTTPS over TLS or SSL port 443 (encrypted)
+
+Database Protocols
+-Microsoft SQL Server port 1433
+-SQLNet port 1521
+-MySQL port 3306
+
+Other Protocols
+-Lighweight Directory Access Protocol (LDAP)port 389(unencrypted) port 636 (SSL\TLS ecryption)
+-Syslog (generates log event on the network device over port 514)
+-Sessions Initation Protocol(SIP) used by VoIP (Voice over IP) over UDP port 5060 SIP Secure (SIPS) poperates over port 5051
+
+Network Protocols
+-ICMP used with ping and traceroute(tracert) tha measure latency between routers (hops) on a network
+-Pings send 4 IMCP echo request and will receive 4 ICMP echo replies.
+
+Network Services 
+-Network Time Protocol(NTP) synchronizes clock/times on all servers, clients, and devices on the network using port 123
+-Dynamic Host Configuration Protocol automatically provides IP address, client uses UDP port 68, DCHP server uses port 67
+	-Client send DHCP Discover packet using broadcast packet.
+	-All servers who see it will respond with DHCP Offer that contains IP Address of the server
+	-Client will select first one it receives and send a DHCP Request to get an IP (the client still doesn't haev an ip)
+	-After server checks its scope it will send back a DHCP Acknowledgement(ACK) via unicast.
+	-DHCP Relay agent can forward across routers(routers don't pass broadcast traffic without DHCP Relay Agent)
