@@ -1,0 +1,64 @@
+**High Availabity Planning**
+-Service Level Agreement(Cloud service providers(You must have a 99.99% uptime))
+-A strategy for enabling high avaliabity(HA) is to build fault tolerance and redundancy into hardware
+=To understand HA strategies, the following terminology should be remembered=
+	-MTTR(Mean time to report) - total time needed to fix an issue Total Repair time divded by number of repaits
+	-MTBF(Mean time between failture) - Predicted tiem between outages
+	-RTO(Recovery time objective) - the time your network can reasonably tolerate an outage
+	-RPO(Recovery point objective) - the amount of historical data you'll need to be able to restore from backup in response to an outage
+
+**Diverse Path**
+-To provide for HA in our communications, as an example, we would plan on diversity in our telecommunications services.
+Coperate Network -> R1 -> ISP_A -> Internet -> Data Center (No redundant paths)
+		   ->	ISP_A \
+Coperate Network -[		-> Internet Data Center
+		   ->	ISP_B /
+		   
+**Infrastucture Redundancy**
+-Fault tolerance: The ability of a system to operate normally, despite failure of its parts.
+	-Ways to do this: 
+	-Have a device that will detect all flow into the network
+	-Load balance firewalls:Distributes work loads across all available resources through the use of algorithms to determine which servers or devices will receive the traffic.
+			=examples of load balance=
+			-Round robin: next available server receives request
+			-Weighted round robin: servers with high weightings receive more request.
+			-Least connection: The server with the least amounts of connections.
+-Clustering: Combining devices so they are viewed as a single device, able to use the resources of all in tandem, however if a single unit fails the others continue to provide service
+-NIC Teaming:Allows NICs to be combined into a group to provide fault tolerance in the event one fails.
+-Port aggregation: Similar concept to clustering, combining multiple physical ports on a device into one logical port on a device through a protocol such as link aggregation control protocol(LACP)
+
+**Disaster Recovery Planning**
+-Business continuity is the ability of a company to continue doing business with the last amount of interruption as possible
+=Example= What would happen if elon musk or mark zuckerberg died, what would happen to the company
+-A DPP should include:
+	-Contact names and phone numbers for emergency coordinators
+	-Details on which data servers are backed up, how frequently backups occur, where are the backups kept, how backed up data can be fully recovered
+	-Details on network topology redundancy and agreements with national service carriers
+	-Regular strategies for testing the disaster recovery plan
+	-A plan for managing the crisis
+
+**Disaster Recovery Contingencies**
+-Cold site: components necessary to rebuild the network exist, but they aren't appropriately configured, updated, or connected
+-Warm site: components necessary to rebuild the network exist, with appropriately configured updated and connected
+-Hot site: components necessary to rebuild the network exist and match the network's current state (all updated and configured)
+-DRaaS(Disaster recovery as a service) provides a highly salable, inexpensive disaster recovery
+
+**Power Management**
+-Power surges can cause serious damage to sensitive computer equipment
+-Things to learn:The nature of an electric circuit & Electrical components that manage electricity
+-Surge:momentary increase in voltage | Cause: Lightning strikes, solar flares, or electrical problems
+-Noise:fluctuation in voltage level |
+-Brownout:momentary decrease in voltage
+-Blackout:complete power loss
+=Things to do=
+
+**Backup Types**
+-Full volume backup: All files are backed up, regardless of the archive bit, and the archive bit is removed if set
+-Incremental: Modified / created files have an archive bit set, and will remove the bit. Shorter backup time, requires longer restoration time.
+-Differential: Modified / created files that have an archive bit, and will keep the bit. Longer backup time as the week progresses, however shorter restoration time.
+if you lose progress Thursday week 5, to recover you must goto week4 full volume + week 5 monday->wednesday incremental || week5 wednesday differential
+
+**Backup Systems**
+
+
+	
