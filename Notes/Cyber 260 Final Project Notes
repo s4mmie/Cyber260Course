@@ -1,0 +1,52 @@
+Where to put access points?
+	-Omnidirection antennas will broadcast equal distance.
+	-Make sure your signal doesn't bleed outside.
+	-Directional antenna will go in a straight direction(unless an object is in the way which may cause it to pass through to get absorbed)
+
+How do you implament a wifi network?
+	-Router -> Firewall -> Switch -> Client
+				/\Access point <- Wireless point
+	Determine the design
+		-Distance
+		-Type and number of obstacles
+		-Coverage
+		-Interference
+		
+		Site Survey
+			-20% overlap
+			-look at types of walls
+			-studying building blueprints
+			-Consider if wifi access points will be used
+			
+	Configure wifi connectivity devices
+		-Admin password
+		-SSID to broadcast or not
+		-Secuirty options
+		-If DHCP is used
+	Configure wifi clients
+		-On boarding involves installing a program or app onto a devices to give it trusted access to certain protions of the network
+		-Off boarding remove programes that gave devices special permissions on the network
+			-Administrators need a feature that allows them to off board remotely incase the device is lost or stolen
+	Wifi network secuity
+		-Authentication allows a client to log on to the network providing the right password
+			-Pre-Shared key (PSK) used to share a password
+			-EAP(Extensible Authentication Protocol)
+			-Open authentication(no auth)
+			-Wifi protected setup(WPS)
+			-Captive protal
+		-Mac filtering prevents from authenticating any device whose mac address is not listed
+		Encryption algoritms
+			-WEP was made in 1997 too short of an intialization vector
+				-WEP can be cracked in 5 minutes
+			-WPA assign a dynamic trasmission key
+			-TKIP(Temporal key integrity protocol
+				-Message integrity
+				-Key distribution
+				-Encryption WEAK
+			-WPA2 uses stronger data confidentiality
+				-CCMP(Counter mode) with CBC(Cipher Block Chaining)
+				-Ecryption AES(256bit keys)
+			-WPA3
+				-Strongest security
+				-Backwards compatiable for wpa2
+				

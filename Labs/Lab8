@@ -1,0 +1,21 @@
+CHALLENEGE1: 677898
+CHALLENEGE2: 454888
+CHALLENEGE3: 555617
+CHALLENEGE4: 888221
+CHALLENEGE5: 222331
+
+Q1: What application are you using to capture packets?
+Q2: What is NAT?
+Q3: What application do you use to determine an open port on an firewall?
+Q4: What is the name of product you are using as a firewall?
+Q5: What do you setup when you want to filter traffic from getting through a firewall?
+Q6: What is a VPN?
+Q7: What protocol runs on top of the VPN to allow secure communcation?
+
+A1: wireshark
+A2: NAT stands for network address translation, nats can be used to allow internal ip addresses access to the WAN. The NAT router stores the randomly assigned port and the destination address in a NAT translation table.
+A3: Windows command prompt using NMAP + the address you are wanting to check the ports for.
+A4: pfSense
+A5: you will set up rules
+A6: A vpn is a virtual private network used as a middle man for connections
+A7: PPTP port to port tunning protocol

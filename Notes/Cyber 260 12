@@ -1,0 +1,87 @@
+WLANs will transmit signals through the air via RF (Radio Frequency)
+
+Wireless Spectrum
+	-9KHz -> 30GHz
+	-RFID(Radio Requency Idenification)
+		-use electromagnetic fields to store data on a small chip in an RFID tag, which includes an antenna that can transmit and receive and possibly a battery.
+		
+	-NFC(near-field communication)
+		-Tapping a phone or card to pay
+		-One way transmission
+		-RFID Blockers good for secuirity
+	-Z-Wave
+		-Signaling to manage wireless connections and control to transmit data and commands between devices
+		-Is a smart home protocl that provides two functions
+	-ZigBee
+		-HVAC control
+		-AMR(Automatic Meter Reading)
+		-Fleet management (A feelt of cars)
+	-Bluetooth
+		-Most bluetooth devices require close proxmity
+		-Hops between frequencies reduces interfenerence
+	-ANT+
+		-Tracks information from sensors typically embedded in heart rate monitors, GPS devices, and other acivity monitoring devices.
+		-ANT+ can sync data frmo multiple devices
+		-Smart watches smartphone, fitness equipment
+	-IR(infrared)
+		-Exists just below the spectrum visable to the human eye
+
+Channel Management
+	-FHSS(Frequency hopping spread spectrum)
+		-Used by the military, if you are out in the field, ways to make it so the enemy cant listen in. 
+	-DSSS(Direct sequence spread spectrum)
+		-Used a wider frequency so more vulnerable to interfence
+		-wifi uses this
+	-LOS occurs when the signal travels in a straight line directly from transmitter to reciever
+	-Wireless signals do not usually follow a straight line
+	-When obstacles are in a signal's way the signal may pass through or be
+	
+	-Attenuation the farther the signal moves away from the source the more it weakens
+	-Wireless signals can be amplified by incrasing the power or by extended or repeating the signal a closer broadcast
+	
+	-Fading is when a signal ruds into obstacles its energy will gradually fade
+	
+	-Interference- electromagneti waves can interfere with wireless communication
+	
+Ways singals can move
+	-Refraction
+	-Reflection
+	-Scattering
+	-Defraction
+
+802.11 
+	-Channel bonding
+		-Combined two channels together for a bigger tunnel
+		two 20MHz for a 40MHz channel
+	-MIMO(Multiple input multiple output
+	-802.11 Frames
+		-802.3 has different ethernets
+		-Destination -> Go to mac
+		-Source -> The source's mac
+		
+		-Three groups
+			-Management frames
+			-Control Frames
+				-Include information of the session setup
+			-Data Frames
+				-Things that have data
+	
+Association and Wireless topologies
+	-Association is the process where packets are exchanged between computer and an access point in order to gain internet acces
+	-Scanning surveys its surroundings for an access point
+		-Active scanning 
+		-Passive scanning
+	-SSID Network Name (unique string to identify an access point
+	-IBSS Independent basic service set
+		-ad hoc networking
+		-no access point
+	-BSS Basic set service
+		-most common type where you juts connect to a router or access point
+	-ESS Extended service set
+		-using a mesh topology
+			-one connects to everything else
+		-access points use the same SSID Extended SSID
+		-Managed by a wireless LAN controller
+		
+
+	
